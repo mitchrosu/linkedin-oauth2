@@ -18,15 +18,15 @@ module LinkedIn
       end
     end
 
-    def timestamp
-      value = self['timestamp']
-      if value.kind_of? Integer
-        value = value / 1000 if value > 9999999999
-        Time.at(value)
-      else
-        value
-      end
-    end
+    # def timestamp
+    #   value = self['timestamp']
+    #   if value.kind_of? Integer
+    #     value = value / 1000 if value > 9999999999
+    #     Time.at(value)
+    #   else
+    #     value
+    #   end
+    # end
 
 
     protected ############################################################
